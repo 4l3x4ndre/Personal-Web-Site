@@ -115,6 +115,7 @@ h2 {
     margin-bottom: 0;
     padding-bottom: 0;
 }
+
 .fleches {
     transform: rotate(90deg);
     height: 10%;
@@ -251,23 +252,23 @@ table {
     border: 3px solid #6495ed;
     border-collapse: collapse;
     box-shadow: 16px 16px 10px black;
-    font-family: sans-serif monospace;
+    font-family: sans-serif, monospace;
 }
 
 thead {
     background-color: #D0E3FA;
     border: 1px solid #6495ed;
-    font-family: sans-serif monospace;
+    font-family: sans-serif, monospace;
 }
 
 tbody {
     background-color: #FFFFFF;
     border: 1px solid #6495ed;
-    font-family: sans-serif monospace;
+    font-family: sans-serif, monospace;
 }
 
 th {
-    font-family: sans-serif monospace;
+    font-family: sans-serif, monospace;
     border: 1px dotted #6495ed;
     padding: 5px;
     background-color: #EFF6FF;
