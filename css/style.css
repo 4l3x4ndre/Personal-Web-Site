@@ -70,8 +70,7 @@
 
 body, html {
     height: 100%;
-    margin: 0%;
-    font-size: 16px;
+    margin: 0;
     font-family: "Lato", sans-serif;
     font-weight: 400;
     color: #666;
@@ -400,7 +399,7 @@ tr {
 }
 .fa {
     display: inline-block;
-    font: normal normal normal 14px/1 FontAwesome;
+    font: normal normal normal 14px/1 FontAwesome, sans-serif;
     font-size: inherit;
     text-rendering: auto;
 }
