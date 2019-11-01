@@ -259,7 +259,7 @@ tbody {
 }
 
 th {
-    font-family: monospace;
+    font-family: sans-serif monospace;
     border: 1px dotted #6495ed;
     padding: 5px;
     background-color: #EFF6FF;
