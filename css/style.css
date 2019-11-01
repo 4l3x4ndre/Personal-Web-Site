@@ -1,3 +1,68 @@
+@media screen and (min-width: 720px){
+    .section {
+        padding: 50px 80px;
+    }
+
+    .section p {
+        margin-bottom: 50px;
+    }
+
+    .ptext {
+        height: 100%;
+    }
+
+    .conteneur {
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    .tab1 {
+        margin: 50px 0;
+    }
+
+    .ma_photo_cv {
+        float: right;
+    }
+}
+
+@media screen and (max-width: 719px) {
+    .section {
+        padding: 0;
+    }
+
+    .section p {
+        margin-bottom: 0;
+    }
+
+    h1 {
+        font-size: 100%;
+        margin-top: 20%;
+    }
+    h2 {
+        font-size: 100%;
+        margin-top: 5%;
+    }
+
+    .contacts_liste {
+        padding: 10%;
+        display: block;
+    }
+
+    .conteneur {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .tab1 {
+        margin: 10% auto;
+    }
+
+    .tableau1 {
+        text-align: center;
+    }
+
+}
+
 body, html {
     height: 100%;
     margin: 0%;
@@ -43,7 +108,7 @@ h2 {
     text-shadow: 4px 4px 10px black;
     position: relative;
     margin-bottom: 0;
-    top: 10%;
+    padding-bottom: 0;
 }
 .fleches {
     transform: rotate(90deg);
@@ -51,11 +116,11 @@ h2 {
 }
 @keyframes descendre_anim {
     from {
-        top: 10%;
+        bottom: -5%;
     }
 
     to {
-        top: 20%;
+        bottom: -20%;
     }
 }
 @keyframes fade_in {
@@ -83,7 +148,6 @@ h3 {
     font-family: sans-serif;
     font-size: 1.2em;
     text-align: justify;
-    margin-bottom: 50px;
     line-height: 200%;
 }
 
@@ -129,7 +193,7 @@ li a {
     color: white;
     padding: 5%;
     margin: 10px;
-    font-family: monospace;
+    font-family: sans-serif;
 }
 
 nav li a:hover { /* Lorsque la souris passe dessus */
@@ -166,19 +230,6 @@ nav li a:hover { /* Lorsque la souris passe dessus */
 
 /* ----- CV ----- */
 
-.ma_photo_cv {
-    float: right;
-}
-
-.conteneur {
-    width: 50%;
-    margin: 0 auto;
-}
-
-.tab1 {
-    margin: 50px 0;
-}
-
 .tab1 td {
     text-align: center;
 }
@@ -187,8 +238,7 @@ nav li a:hover { /* Lorsque la souris passe dessus */
     width: 100%;
     margin-bottom: 10px;
     display: inline-block;
-    left: 50%;
-    transform: translateX(-50%);
+
     position: relative;
 }
 
@@ -234,7 +284,7 @@ tr {
 
 /* ----- Page ----- */
 
-.img1, .img2, .img3, .img4, .img1_contact, .img2_contact, .img1_cv {
+.img{
     position: relative;
     background-position: center;
     background-size: cover;
@@ -277,7 +327,6 @@ tr {
 .section {
     box-shadow: 0 -20px 10px black;
     text-align: left;
-    padding: 50px 80px;
 }
 
 .section-lu {
@@ -298,7 +347,7 @@ tr {
     color: #000;
     font-size: 27px;
     letter-spacing: 8px;
-    text-transform: uppercase;
+    text-transform: uppercase;;
 }
 
 .ptext .trans {
