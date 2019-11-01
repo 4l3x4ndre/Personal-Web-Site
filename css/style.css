@@ -8,6 +8,7 @@
     }
 
     .ptext {
+        top: 25%;
         height: 100%;
     }
 
@@ -34,9 +35,13 @@
         margin-bottom: 0;
     }
 
+    .ptext {
+        top: 15%;
+    }
+
     h1 {
         font-size: 100%;
-        margin-top: 20%;
+        margin-top: 10%;
     }
     h2 {
         font-size: 100%;
@@ -45,7 +50,7 @@
 
     .contacts_liste {
         padding: 10%;
-        display: block;
+        display: inline-block;
     }
 
     .conteneur {
@@ -246,16 +251,19 @@ table {
     border: 3px solid #6495ed;
     border-collapse: collapse;
     box-shadow: 16px 16px 10px black;
+    font-family: sans-serif monospace;
 }
 
 thead {
     background-color: #D0E3FA;
     border: 1px solid #6495ed;
+    font-family: sans-serif monospace;
 }
 
 tbody {
     background-color: #FFFFFF;
     border: 1px solid #6495ed;
+    font-family: sans-serif monospace;
 }
 
 th {
@@ -341,7 +349,6 @@ tr {
 
 .ptext {
     position: absolute;
-    top: 25%;
     width: 100%;
     text-align: center;
     color: #000;
