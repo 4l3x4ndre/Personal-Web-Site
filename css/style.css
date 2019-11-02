@@ -350,6 +350,7 @@ tr {
 .ptext {
     position: absolute;
     width: 100%;
+    height: auto;
     text-align: center;
     color: #000;
     font-size: 27px;
