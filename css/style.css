@@ -1,268 +1,94 @@
-/* ---- Grands & Moyens écrans --- */
-@media screen and (min-width: 720px) {
-    body {
-        margin: 0;
-        background-color: black;
-        /*
-        overflow: hidden;
-        */
+@media screen and (min-width: 720px){
+    .section {
+        padding: 50px 80px;
     }
 
-    h3 {
-        text-transform: uppercase;
-        font-size: 3em;
-        color: black;
-        font-family: sans-serif;
-        width: 100%;
-        padding: 50px;
-        margin: 0 auto;
-        text-shadow: 2px 2px 8px darkgrey;
-    }
-
-    h2 {
-        animation-duration: 2s;
-        animation-name: descendre_anim, fade_in;
-        animation-iteration-count: infinite;
-        animation-direction: alternate;
-    }
-
-    .groupe2, .groupe3, .groupe4 {
-        box-shadow: 0 -20px 30px black;
-        position: relative;
-    }
-
-    .img2 {
-        background-image: url('../images/cours.jpg');
-        filter: contrast(150%);
-    }
-
-    .img3 {
-        background-image: url('../images/dev.jpg');
-        filter: contrast(150%);
-    }
-
-    .img4 {
-        background-image: url('../images/salle.jpg');
-        filter: saturate(200%);
-    }
-
-    .img2, .img3, .img4 {
-        background-repeat: no-repeat;
-        background-size: cover;
-        min-height: 100%;
-        min-width: 100%;
-        position: absolute;
-    }
-
-    .boite {
-        width: 70%;
-        display: inline-block;
-        z-index: 1000;
-
-        left: 50%;
-        transform: translateX(-50%);
-        position: relative;
-
-        margin: 0 auto 0;
-        background-color: cornsilk;
-        box-shadow: 6px 6px 10px black;
-        font-family: sans-serif;
-        border-radius: 50px;
-    }
-
-    .boite p {
-        padding: 50px;
-        font-family: sans-serif;
-        font-size: 1.2em;
-        text-align: justify;
+    .section p {
         margin-bottom: 50px;
-        line-height: 200%;
     }
 
-    .credits {
-        width: 100%;
-        height: 10%;
-        background-color: black;
-        color: white;
-        position: fixed;
-        bottom: 0;
-        z-index: 1000;
-        text-align: center;
+    .ptext {
+        top: 25%;
+        height: 100%;
     }
 
-
-    footer {
-        display: flex;
-        justify-content: center;
-        padding: 5px;
-        background-color: #45a1ff;
-        color: #fff;
+    .conteneur {
+        width: 50%;
+        margin: 0 auto;
     }
 
-    .block_devant {
-        margin-top: 10%;
-        transform: translateZ(90px) scale(.7);
-        z-index: 1;
+    .tab1 {
+        margin: 50px 0;
     }
 
-    .block_fond {
-        transform: translateZ(-300px) scale(2.5);
-        z-index: 1;
-        position: fixed;
-        bottom: 0;
+    .ma_photo_cv {
+        float: right;
+    }
+}
+
+@media screen and (max-width: 719px) {
+    .section {
+        padding: 0;
     }
 
-    /* ------ Effet de parallax ---- */
-    .parallax_block {
-        align-content: center;
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
+    .section p {
         margin-bottom: 0;
     }
 
-    .parallax {
-        margin: 0;
-        height: 100vh;
-        overflow-x: hidden;
-        overflow-y: auto;
-        perspective: 300px;
-        transform-style: preserve-3d;
-    }
-
-    .parallax_groupe {
-        position: relative;
-        height: 100vh;
-        transform-style: preserve-3d;
-    }
-
-    .block_milieu {
-        transform: translateZ(0);
-        z-index: 4;
-    }
-
-    /* ###### Partie CV Grands écrans ###### */
-    .tab1 {
-        width: 30%;
-    }
-
-    /* ###### Partie Contact Grands écrans ###### */
-    .conteneur_contacts {
-        display: inline-block;
-        padding: 100px;
-        position: relative;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-}
-
-/* ---- Petits écrans --- */
-@media screen and (max-width: 719px) {
-    body {
-        margin: 0;
-        overflow: scroll;
-        background-color: cornflowerblue;
-    }
-
-    h3 {
-        text-transform: uppercase;
-        font-size: 2em;
-        color: black;
-        font-family: sans-serif;
-        padding: 0 50px 50px;
-        margin: 0 auto;
-        text-shadow: 2px 2px 8px darkgrey;
-    }
-
-    h2 {
-        display: none;
+    .ptext {
+        top: 15%;
     }
 
     h1 {
-        font-size: 1.5em;
-    }
-
-    .groupe2, .groupe3, .groupe4 {
-        position: relative;
-    }
-
-    .img2, .img3, .img4 {
-        background-color: cornflowerblue;
-    }
-
-    .boite {
-        width: 100%;
-        display: inline-block;
-        position: relative;
-    }
-
-    .boite p {
-        padding-left: 20px;
-        padding-right: 20px;
-        font-family: sans-serif;
-        font-size: 1.2em;
-        text-align: justify;
-        margin-bottom: 50px;
-        line-height: 200%;
-    }
-
-    .block_devant {
+        font-size: 100%;
         margin-top: 10%;
-        z-index: 1;
+    }
+    h2 {
+        font-size: 100%;
+        margin-top: 5%;
     }
 
-    .credits {
-        display: none;
+    .contacts_liste {
+        padding: 10%;
+        display: inline-block;
     }
 
-    /* ###### Partie CV Petits écrans ###### */
     .conteneur {
-        width: 70%;
-        height: 100%;
-        margin: 0 auto 10px;
-        overflow: visible;
+        width: 100%;
+        margin: 0 auto;
     }
 
-    /* ###### Partie Contact Petits écrans ###### */
-    ul.contacts_liste {
-        display: block;
+    .tab1 {
+        margin: 10% auto;
     }
 
-    .conteneur_contacts {
-        padding: 30px;
-        margin: 20px;
+    .tableau1 {
+        text-align: center;
     }
+
 }
 
-/* ###### Partie commune tous écrans ###### */
-
-.groupe1 {
-    font-size: 2.1em;
-    margin: 0;
-    text-align: center;
-}
-
-.img_fond {
-    background-image: url('../images/lycee.jpg');
-    background-size: cover;
+body, html {
     height: 100%;
-    filter: grayscale(50%);
-
-    animation-duration: 1s;
-    animation-name: blur_anim;
-    animation-iteration-count: 1;
-    animation-direction: normal;
+    margin: 0;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    color: #666;
+    background-color: black;
 }
 
-@keyframes blur_anim {
-    0% {
-        filter: grayscale(0%);
-    }
-    100% {
-        filter: grayscale(50%);
-    }
+.mapage {
+    height: 100%;
+    margin: 0%;
+    color: #666;
+}
+
+footer {
+    width: 100%;
+    background-color: black;
+    color: white;
+    bottom: 0;
+    text-align: center;
 }
 
 h1 {
@@ -277,6 +103,31 @@ h1 {
     animation-direction: normal;
 }
 
+h2 {
+    animation-duration: 2s;
+    animation-name: descendre_anim, fade_in;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    color: rgb(226, 226, 226);
+    text-shadow: 4px 4px 10px black;
+    position: relative;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.fleches {
+    transform: rotate(90deg);
+    height: 10%;
+}
+@keyframes descendre_anim {
+    from {
+        bottom: -5%;
+    }
+
+    to {
+        bottom: -20%;
+    }
+}
 @keyframes fade_in {
     0% {
         opacity: 0;
@@ -286,62 +137,29 @@ h1 {
     }
 }
 
-h2 {
-    color: rgb(226, 226, 226);
-    text-shadow: 4px 4px 10px black;
-    position: relative;
-    margin-bottom: 0;
+h3 {
+    text-transform: uppercase;
+    font-size: 3em;
+    color: black;
+    font-family: sans-serif;
+    width: auto;
+    padding: 50px;
+    margin: 0 auto;
+    text-shadow: 2px 2px 8px darkgrey;
 }
 
-.fleches {
-    transform: rotate(90deg);
+.section p {
+    padding: 50px;
+    font-family: sans-serif;
+    font-size: 1.2em;
+    text-align: justify;
+    line-height: 200%;
 }
 
-@keyframes descendre_anim {
-    from {
-        top: 60%;
-    }
-
-    to {
-        top: 75%;
-    }
-}
-
-
-.boite img {
-    height: 150px;
-    width: 150px;
-    padding: 30px;
-    border-radius: 50%;
-}
-
-.boite hr {
+.section hr {
     border: 1px solid red;
     width: 50%;
     margin-left: 50px;
-}
-
-.droite {
-    float: right;
-    clear: left;
-}
-
-.photosEpi {
-    background-image: url('../images/epitech.jpg');
-    background-size: cover;
-    height: 150px;
-    width: 150px;
-    padding: 30px;
-    margin: 30px;
-    border-radius: 50%;
-    display: block;
-    position: relative;
-    box-shadow: 6px 6px 10px black;
-
-    animation-duration: 20s;
-    animation-name: change_photos;
-    animation-iteration-count: infinite;
-    animation-direction: normal;
 }
 
 /* ---- Bar de navigation / menu --- */
@@ -351,7 +169,7 @@ nav {
     */
     width: 100%;
     background-color: rgb(117, 117, 117);
-    position: sticky;
+    position: fixed;
     top: 0;
     z-index: 1000;
     box-shadow: 0 3px 20px black;
@@ -366,7 +184,6 @@ nav .active {
 ul {
     margin: 0;
     padding: 0;
-
     display: flex; /* affichage en ligne */
 }
 
@@ -379,9 +196,9 @@ li {
 li a {
     text-decoration: none;
     color: white;
-    padding: 10%;
+    padding: 5%;
     margin: 10px;
-    font-family: monospace;
+    font-family: sans-serif;
 }
 
 nav li a:hover { /* Lorsque la souris passe dessus */
@@ -390,40 +207,33 @@ nav li a:hover { /* Lorsque la souris passe dessus */
     background-color: grey;
 }
 
+/* ----- Contact ----- */
 
-/* ####### Partie CV ###### */
-@media screen and (min-width: 720px) {
-    .tab_img_fond {
-        height: 100%;
-        background-image: linear-gradient(
-                -74deg,
-                transparent 90%, rgba(255, 255, 255, .23) 20%),
-        linear-gradient(-74deg, transparent 83%, rgba(255, 255, 255, .18) 15%),
-        linear-gradient(-74deg, transparent 76%, rgba(255, 255, 255, .1) 15%),
-        linear-gradient(to top, #127ab1, #1799e0, #1796db);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-    }
-
-    .ma_photo_cv {
-        float: right;
-    }
-
-    .conteneur {
-        width: 50%;
-        margin: -13% auto;
-        height: 100%;
-    }
-
-    .ma_photo_cv {
-        left: 50%;
-    }
+.conteneur_contacts {
+    text-align: center;
 }
 
-.tab1 {
-    margin: 50px 0;
+.conteneur_contacts i {
+    text-shadow: 3px 3px 5px black;
 }
+
+.conteneur_contacts li {
+    margin: 0;
+}
+
+.contacts_liste a {
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+
+.contacts_liste a:hover {
+    color: rgb(204, 204, 204);
+    border-radius: 0;
+}
+
+
+/* ----- CV ----- */
 
 .tab1 td {
     text-align: center;
@@ -433,50 +243,31 @@ nav li a:hover { /* Lorsque la souris passe dessus */
     width: 100%;
     margin-bottom: 10px;
     display: inline-block;
-    left: 50%;
-    transform: translateX(-50%);
+
     position: relative;
-}
-
-.ma_photo_cv {
-    top: 0;
-    height: 200px;
-    width: 200px;
-    object-fit: cover;
-    padding: 30px;
-    border-radius: 50%;
-}
-
-.img_fond_cv {
-    background-image: url('../images/bureau.jpg');
-    background-size: cover;
-    height: 100%;
-    filter: grayscale(50%);
-
-    animation-duration: 1s;
-    animation-name: blur_anim;
-    animation-iteration-count: 1;
-    animation-direction: normal;
 }
 
 table {
     border: 3px solid #6495ed;
     border-collapse: collapse;
     box-shadow: 16px 16px 10px black;
+    font-family: sans-serif, monospace;
 }
 
 thead {
     background-color: #D0E3FA;
     border: 1px solid #6495ed;
+    font-family: sans-serif, monospace;
 }
 
 tbody {
     background-color: #FFFFFF;
     border: 1px solid #6495ed;
+    font-family: sans-serif, monospace;
 }
 
 th {
-    font-family: monospace;
+    font-family: sans-serif, monospace;
     border: 1px dotted #6495ed;
     padding: 5px;
     background-color: #EFF6FF;
@@ -498,115 +289,164 @@ tr {
     height: 50px;
 }
 
-/* ###### Partie Contact ###### */
-.conteneur_contacts {
-    text-align: center;
-    background-color: white;
-    border-radius: 50px;
-    box-shadow: 6px 6px 10px black;
-}
 
-.conteneur_contacts i {
-    text-shadow: 3px 3px 5px black;
-}
+/* ----- Page ----- */
 
-.contacts_liste a {
-    color: black;
-    padding: 10% 0;
-}
-
-.contacts_liste a:hover {
-    color: rgb(204, 204, 204);
-    border-radius: 0;
-}
-
-.img_fond_contacts, .img_fond_contacts2 {
+.img{
+    position: relative;
+    background-position: center;
     background-size: cover;
-    height: 100%;
-
-    animation-duration: 1s;
-    animation-name: blur_anim_2;
-    animation-iteration-count: 1;
-    animation-direction: normal;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
-.img_fond_contacts {
-    background-image: url('../images/travail.jpg');
-    filter: blur(5px) grayscale(50%); /* Le blur est très gourment en ressources ! */
+.img1 {
+    background-image: url('../images/lycee.jpg');
+    min-height: 100%;
+}
+.img1_contact {
+    background-image: url("../images/travail.jpg");
+    min-height: 100%;
+}
+.img1_cv {
+    background-image: url("../images/bureau.jpg");
+    min-height: 100%;
 }
 
-@keyframes blur_anim_2 {
-    0% {
-        filter: blur(5px) grayscale(0%);
-    }
-    100% {
-        filter: blur(5px) grayscale(50%);
-    }
+.img2 {
+    background-image: url('../images/cours.jpg');
+    min-height: 50%;
+}
+.img2_contact {
+    background-image: url("../images/pc.jpg");
+    min-height: 50%;
 }
 
-
-.img_fond_contacts2 {
-    background-image: url('../images/pc.jpg');
-    filter: grayscale(10%);
+.img3 {
+    background-image: url('../images/piano.jpg');
+    min-height: 50%;
 }
 
-/* ###### Font-awesome ######
-Copié depuis https://fontawesome.com/v4.7.0/get-started/
-*/
+.img4 {
+    background-image: url('../images/dev.jpg');
+    min-height: 50%;
+}
 
+.section {
+    box-shadow: 0 -20px 10px black;
+    text-align: left;
+}
+
+.section-lu {
+    background-color: #f4f4f4;
+    color: #666;
+}
+
+.section-sombre {
+    background-color: #282e34;
+    color: #ddd;
+}
+
+.ptext {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    color: #000;
+    font-size: 27px;
+    letter-spacing: 8px;
+    text-transform: uppercase;;
+}
+
+.ptext .trans {
+    color: #fff;
+    padding: 20px;
+}
+
+.ptext .border {
+    background-color: #757575;
+    color: #fff;
+    padding: 20px;
+}
+
+.droite {
+    float: right;
+    clear: left;
+}
+
+.section img {
+    height: 150px;
+    width: 150px;
+    padding: 30px;
+    border-radius: 50%;
+}
+
+/*Copié depuis https://fontawesome.com/v4.7.0/get-started/*/
 /*!
  *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
  */
+
 @font-face {
     font-family: 'FontAwesome';
     src: url('../fonts/fontawesome-webfont.eot?v=4.7.0');
-    src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'), url('../fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
+    src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'),
+    url('../fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'),
+    url('../fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'),
+    url('../fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'),
+    url('../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
     font-weight: normal;
-    font-style: normal
+    font-style: normal;
 }
-
 .fa {
     display: inline-block;
-    font: normal normal normal 14px/1 FontAwesome;
+    font: normal normal normal 14px/1 FontAwesome, sans-serif;
     font-size: inherit;
     text-rendering: auto;
 }
 
 .fa-envelope:before {
-    content: "\f0e0"
+    content: "\f0e0";
 }
 
 .fa-github:before {
-    content: "\f09b"
+    content: "\f09b";
 }
 
 .fa-home:before {
-    content: "\f015"
+    content: "\f015";
 }
 
 .fa-briefcase:before {
-    content: "\f0b1"
+    content: "\f0b1";
 }
 
 .fa-graduation-cap:before {
-    content: "\f19d"
+    content: "\f19d";
+}
+
+.fa-arrow-down:before {
+    content: "\f063";
+}
+
+.fa-angle-double-down:before {
+    content: "\f103";
 }
 
 .fa-lg {
     font-size: 1.33333333em;
     line-height: .75em;
-    vertical-align: -15%
+    vertical-align: -15%;
 }
 
 .fa-check-square-o:before {
-    content: "\f046"
+    content: "\f046";
 }
 
 .fa-wrench:before {
-    content: "\f0ad"
+    content: "\f0ad";
 }
 
 .fa-3x {
-    font-size: 3em
+    font-size: 3em;
 }
