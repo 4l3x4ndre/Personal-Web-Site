@@ -211,6 +211,9 @@ nav li a:hover { /* Lorsque la souris passe dessus */
 
 .conteneur_contacts {
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .conteneur_contacts i {
